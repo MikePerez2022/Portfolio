@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<html>
+<html lang="en">
 
 <head>
-    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/superhero/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Navbar</a>
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
                 aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -16,7 +22,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary active" href="portfolio.html">My Projects</a>
+                        <a class="nav-link active" href="portfolio.html">My Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Me</a>
@@ -28,48 +34,62 @@
             </div>
         </div>
     </nav>
-</head>
 
-<body>
-    <div class="card mb-3">
-        <h3 class="card-header">Card header</h3>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+    <div class="container mt-5 text-light">
+        <h1>Featured Projects</h1>
+
+        <div class="card bg-dark border-light mb-4">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="images/AI.png" class="img-fluid rounded-start" alt="AI Auto Commenter Screenshot">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="card-title">AI Auto Commenter</h4>
+                        <p class="card-text">A desktop app that uses AI to generate intelligent comments on code. Built
+                            with Python, Tkinter, and the Llama 3.2 LLM. The UI was created using CustomTkinter for a
+                            modern look and better usability.</p>
+                        <p class="card-text"><strong>Tech Used:</strong> Python, Tkinter, CustomTkinter, Llama LLM</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="d-block user-select-none" width="100%" height="200"
-            aria-label="Placeholder: Image cap" focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
-            viewBox="0 0 318 180" style="font-size:1.125rem;text-anchor:middle">
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-        </svg>
-        <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+
+        <div class="card bg-dark border-light mb-4">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="images/iam.png" class="img-fluid rounded-start" alt="AI Auto Commenter Screenshot">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="card-title">AI Platform UI & Unity Plugin - iAMAi</h4>
+                        <p class="card-text">Contributed to a privacy-first AI platform by building a responsive UI in
+                            React.js
+                            and integrating AI Brain DLLs into Unity with backend system research.</p>
+                        <p class="card-text"><strong>Tech Used:</strong> React.js, Unity, C#, DLL Integration</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+
+        <div class="card bg-dark border-light mb-4">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="images/pk.png" class="img-fluid rounded-start" alt="AI Auto Commenter Screenshot">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h4 class="card-title">Boundless (Capstone Project)</h4>
+                        <p class="card-text">A parkour-based movement system built in Unreal Engine 5 using C++ and
+                            Blueprints.
+                            Focused on responsive traversal, wall running, and environmental interactions.</p>
+                        <p class="card-text"><strong>Tech Used:</strong> Unreal Engine 5, C++, Blueprints</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-footer text-muted">
-            2 days ago
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-        </div>
-    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

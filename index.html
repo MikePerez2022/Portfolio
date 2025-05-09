@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<html>
-
+<html lang="en">
 <head>
-    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+    <meta charset="UTF-8">
+    <title>Home - My Game & Software Dev Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/superhero/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Navbar</a>
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
                 aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -13,13 +17,13 @@
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav me-auto nav-underline">
                     <li class="nav-item">
-                        <a class="nav-link text-primary active" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">My Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html" vi>About Me</a>
+                        <a class="nav-link" href="about.html">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Me</a>
@@ -28,7 +32,30 @@
             </div>
         </div>
     </nav>
-</head>
-<body>
+
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="display-4 text-light">Hi, I'm Michael Perez</h1>
+                <p class="lead text-light">
+                    I'm a developer passionate about both software and game development, with a strong interest in dynamic systems, AI, and emerging technologies.
+                </p>
+                <p class="text-light">
+                    My recent Capstone project involved building a parkour movement system in Unreal Engine using C++ and Blueprints, focusing on responsive traversal and interactive environments.
+                </p>
+                <p class="text-light">
+                    I also worked at iAMAi, a company creating a privacy-focused, open-source AI platform. I contributed to the frontend using React.js and helped integrate AI systems into Unity through DLLs and backend research.
+                </p>
+                <p class="text-light">
+                    I enjoy creating systems that are engaging and impactful—whether it's a game mechanic or a software tool—and I’m always looking to grow and collaborate with innovative teams.
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="images/profile.jpg" alt="Profile Photo" class="img-fluid rounded-circle border border-light" style="max-width: 200px;">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
