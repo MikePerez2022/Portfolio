@@ -63,6 +63,24 @@
         <p><strong>Skills:</strong> Unreal Engine, Unity, C++, C#, Python, JavaScript, React.js, Git, Blueprints, AI
             Systems</p>
 
+        <!-- Interactive Skills Section -->
+        <div class="mt-4">
+            <h3>My Skills</h3>
+            <div class="btn-group flex-wrap" role="group" aria-label="Skills">
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="Unreal Engine">Unreal Engine</button>
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="Unity">Unity</button>
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="C++">C++</button>
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="C#">C#</button>
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="Python">Python</button>
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="JavaScript">JavaScript</button>
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="React.js">React.js</button>
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="Git">Git</button>
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="Blueprints">Blueprints</button>
+                <button type="button" class="btn btn-info m-1 skill-btn" data-skill="AI Systems">AI Systems</button>
+            </div>
+            <div id="skill-info" class="alert alert-secondary mt-3" style="display:none;"></div>
+        </div>
+
         <p>
             <br>
             <strong>Check Out my projects:</strong>
@@ -118,6 +136,28 @@
         const toggleBtn = document.getElementById('theme-toggle');
         toggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('accent-mode');
+        });
+
+        // Interactive Skills Section
+        const skillDescriptions = {
+            'Unreal Engine': 'A powerful game engine for creating high-fidelity interactive experiences and games, especially with C++ and Blueprints.',
+            'Unity': 'A versatile game engine used for 2D and 3D games, known for its C# scripting and rapid prototyping.',
+            'C++': 'A high-performance programming language, widely used in game engines and systems programming.',
+            'C#': 'A modern, object-oriented language used in Unity and desktop applications.',
+            'Python': 'A flexible language great for AI, automation, and rapid development.',
+            'JavaScript': 'The language of the web, enabling interactive and dynamic web applications.',
+            'React.js': 'A popular JavaScript library for building user interfaces with reusable components.',
+            'Git': 'Version control system for tracking changes and collaborating on code.',
+            'Blueprints': 'A visual scripting system in Unreal Engine for rapid prototyping and logic design.',
+            'AI Systems': 'Designing and implementing artificial intelligence for games and software.'
+        };
+        document.querySelectorAll('.skill-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const skill = this.getAttribute('data-skill');
+                const infoBox = document.getElementById('skill-info');
+                infoBox.textContent = skillDescriptions[skill] || '';
+                infoBox.style.display = 'block';
+            });
         });
 
         // Greeting animation: animate the greeting on page load
